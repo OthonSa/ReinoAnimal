@@ -1,7 +1,11 @@
 package ReinoAnimalTeste;
 
 import ReinoAnimal.*;
-
+/**
+ * essa classe é responsavel por conter o teste da classes criadas
+ * @author 20201064010009
+ *
+ */
 public class Principal {
 
 	public static void main(String[] args) {
@@ -9,14 +13,14 @@ public class Principal {
 		 * aqui nesses 3 blocos de codigos contem os animais de cada ambiente especifico com seus dados
 		 * que serão colerados e impressos.
 		 */
-		Aquatico aqua1 = new Aquatico("atum azul", "fêmea", 7, "água salgada", false);
-        Aquatico aqua2 = new Aquatico("tilapia", "macho", 3, "água doce", true);
+		Aquatico aqua1 = new Aquatico("atum azul", "femea", 7, "agua salgada", false);
+        Aquatico aqua2 = new Aquatico("tilapia", "macho", 3, "agua doce", true);
 
-        Terrestre terra1 = new Terrestre("tigre de bengala", "fêmea", 2, "Ásia", true);
-        Terrestre terra2 = new Terrestre("tamandua", "macho", 8, "América do Sul", true);
+        Terrestre terra1 = new Terrestre("tigre de bengala", "femea", 2, "asia", true);
+        Terrestre terra2 = new Terrestre("tamandua", "macho", 8, "America do Sul", true);
 
         Aereo aereo1 = new Aereo("mae da lua", "macho", 3, 54.5);
-        Aereo aereo2 = new Aereo("pinguin imperador", "fêmea", 10, 37.9);
+        Aereo aereo2 = new Aereo("pinguin imperador", "femea", 10, 37.9);
 
         /**
          * aqui sera feito o teste dos metodos Testando os métodos

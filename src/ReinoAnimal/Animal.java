@@ -1,25 +1,27 @@
 package ReinoAnimal;
 
+/**
+		 * Classe reponsavel por conter todos os dados base dos animais, abaixo temos:
+	 	* Atributo que armazena a espécie do animal,Atributo que armazena o sexo do animal,
+	 	* Atributo que armazena a data de nascimento do animal,
+	 	* Atributo de classe para contar a quantidade de animais instanciados.
+	 	*
+	 	* @author 20201064010009
+	 	*/
 public class Animal {
 	 	
-	/**
-	 * Classe reponsavel por conter todos os dados base dos animais, abaixo temos:
-	 * Atributo que armazena a espécie do animal,Atributo que armazena o sexo do animal,
-	 * Atributo que armazena a data de nascimento do animal,
-	 * Atributo de classe para contar a quantidade de animais instanciados.
-	 *
-	 * @author 20201064010009
-	 */
-
 		private String especie;  
 	    private String sexo;    
 	    private int dataNascimento;  
 	    private static int contador = 0;
 
 	    /**
-	     * Construtor da classe Animal
-	     * Incrementa o contador ao instanciar um novo animal.
+	     *  Construtor da classe Animal
+	     * @param aqui vai referenciar a especie do animal
+	     * @param aqui vai referenciar o sexo
+	     * @param aqui vai referenciar a dataNascimento
 	     */
+	
 	    public Animal(String especie, String sexo, int dataNascimento) {
 	        this.especie = especie;
 	        this.sexo = sexo;
@@ -28,7 +30,7 @@ public class Animal {
 	    }
 
 	    /**
-	     * Método privado para incrementar o contador de animais
+	     *  Método privado para incrementar o contador de animais
 	     */
 	    private void incrementarContador() {
 	        contador++;
@@ -51,18 +53,19 @@ public class Animal {
 	    }
 
 	    /**
-	     * Método estático para obter a quantidade de animais instanciados
-	     * 
+	     *  Método estático para obter a quantidade de animais instanciados
+	     * @return aqui vai pegar o contador
 	     */
+	     
 	    public static int getContador() {
 	        return contador;
 	    }
 
 	    /**
-	     * 
 	     * logo abaixo temos os gets e sets da classe animal
+	     * 
 	     */
-	    
+	
 	    public String getEspecie() {
 	        return especie;
 	    }

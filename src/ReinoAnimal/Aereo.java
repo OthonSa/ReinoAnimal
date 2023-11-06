@@ -1,19 +1,20 @@
 package ReinoAnimal;
-
-public class Aereo extends Animal{
-
-	/**
+/**
 	 * Classe reponsavel por conter todos os animais aereos, abaixo temos:
 	 * Atributo que armazena a altitude que o animal consegue voar.
 	 * 
 	 * @author 20201064010009
 	 */
-	
+public class Aereo extends Animal{
+
 	private double altitudeVoo;
 
     /**
-     *  Construtor da classe Aereo
-     *
+     * Construtor da classe Aereo
+     * @param  para referenciar a do especie
+     * @param  para referenciar o sexo
+     * @param  para referenciar a dataNascimento
+     * @param  para referenciar a altitudeVoo
      */
     public Aereo(String especie, String sexo, int dataNascimento, double altitudeVoo) {
         super(especie, sexo, dataNascimento);
@@ -46,8 +47,9 @@ public class Aereo extends Animal{
 
     /**
      *  gets e sets para os atributos da classe Aereo
-     * 
+     * @return aqui vai pegar o dado da altitude do voo
      */
+   
     public double getAltitudeVoo() {
         return altitudeVoo;
     }

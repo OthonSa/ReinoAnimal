@@ -1,20 +1,22 @@
 package ReinoAnimal;
-
-public class Aquatico extends Animal{
-	
-	/**
+/**
 	 * Classe reponsavel por conter todos os animais aquaticos, abaixo temos:
 	 * Atributo que armazena a tipoAgua,Atributo que armazena se ele possui escamas,
 	 * 
 	 * @author 20201064010009
 	 */
+public class Aquatico extends Animal{
 	
 	private String tipoAgua; 
     private boolean possuiEscamas;
 
     /**
-     *  Construtor da classe Aquatico que vai especificar que o animal é aquatico
-     * 
+     * Construtor da classe Aquatico que vai especificar que o animal é aquatico
+     * @param aqui vai referenciar da especie
+     * @param aqui vai referenciar do sexo
+     * @param aqui vai referenciar a dataNascimento
+     * @param aqui vai referenciar o tipoAgua
+     * @param aqui vai referenciar a possuiEscamas
      */
     public Aquatico(String especie, String sexo, int dataNascimento, String tipoAgua, boolean possuiEscamas) {
         super(especie, sexo, dataNascimento);
@@ -43,13 +45,13 @@ public class Aquatico extends Animal{
     @Override
     public void perfil() {
         super.perfil();
-        System.out.println("Tipo de Água: " + tipoAgua);
+        System.out.println("Tipo de Agua: " + tipoAgua);
         System.out.println("Possui Escamas: " + possuiEscamas);
     }
 
     /**
      * Getters e setters para os atributos da classe Aquatico
-     * 
+     * @return pega os dados do tipo da agua de manda de volta
      */
     public String getTipoAgua() {
         return tipoAgua;
