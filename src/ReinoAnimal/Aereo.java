@@ -1,10 +1,11 @@
 package ReinoAnimal;
 /**
-	 * Classe reponsavel por conter todos os animais aereos, abaixo temos:
-	 * Atributo que armazena a altitude que o animal consegue voar.
-	 * 
-	 * @author 20201064010009
-	 */
+ * Classe reponsavel por conter todos os animais aereos, abaixo temos:
+ * Atributo que armazena a altitude que o animal consegue voar.
+ * 
+ * @author 20201064010009
+ * 
+ */
 public class Aereo extends Animal{
 
 	private double altitudeVoo;

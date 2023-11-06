@@ -1,10 +1,9 @@
 package ReinoAnimal;
 /**
-	 * Classe reponsavel por conter todos os animais terrestres, abaixo temos:
-	 * Atributo que armazena a regiao,Atributo que armazena o tipo da pelagem,
-	 * 
-	 * @author 20201064010009
-	 */
+ * Classe reponsavel por conter todos os animais terrestres, abaixo temos:
+ * Atributo que armazena a regiao,Atributo que armazena o tipo da pelagem,
+ * @author 20201064010009
+ */
 public class Terrestre extends Animal{
 	
 	private String regiao;  

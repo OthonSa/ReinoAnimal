@@ -1,13 +1,12 @@
 package ReinoAnimal;
 
 /**
-		 * Classe reponsavel por conter todos os dados base dos animais, abaixo temos:
-	 	* Atributo que armazena a espécie do animal,Atributo que armazena o sexo do animal,
-	 	* Atributo que armazena a data de nascimento do animal,
-	 	* Atributo de classe para contar a quantidade de animais instanciados.
-	 	*
-	 	* @author 20201064010009
-	 	*/
+ * Classe reponsavel por conter todos os dados base dos animais, abaixo temos:
+ * Atributo que armazena a espécie do animal,Atributo que armazena o sexo do animal,
+ * Atributo que armazena a data de nascimento do animal,
+ * Atributo de classe para contar a quantidade de animais instanciados.
+ * @author 20201064010009
+ */
 public class Animal {
 	 	
 		private String especie;  

@@ -1,10 +1,9 @@
 package ReinoAnimal;
 /**
-	 * Classe reponsavel por conter todos os animais aquaticos, abaixo temos:
-	 * Atributo que armazena a tipoAgua,Atributo que armazena se ele possui escamas,
-	 * 
-	 * @author 20201064010009
-	 */
+ * Classe reponsavel por conter todos os animais aquaticos, abaixo temos:
+ * Atributo que armazena a tipoAgua,Atributo que armazena se ele possui escamas,
+ * @author 20201064010009
+ */
 public class Aquatico extends Animal{
 	
 	private String tipoAgua; 
