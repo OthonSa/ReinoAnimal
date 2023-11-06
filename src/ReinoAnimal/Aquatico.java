@@ -12,11 +12,11 @@ public class Aquatico extends Animal{
 
     /**
      * Construtor da classe Aquatico que vai especificar que o animal é aquatico
-     * @param aqui vai referenciar da especie
-     * @param aqui vai referenciar do sexo
-     * @param aqui vai referenciar a dataNascimento
-     * @param aqui vai referenciar o tipoAgua
-     * @param aqui vai referenciar a possuiEscamas
+     * @param especie aqui vai referenciar da especie do animal
+     * @param sexo aqui vai referenciar do sexo dele
+     * @param dataNascimento aqui vai referenciar do anivesario dele
+     * @param tipoAgua aqui vai referenciar o se vai ser molhada ou n
+     * @param possuiEscamasa qui vai referenciar a se vai ter escamas ou n
      */
     public Aquatico(String especie, String sexo, int dataNascimento, String tipoAgua, boolean possuiEscamas) {
         super(especie, sexo, dataNascimento);

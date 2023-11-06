@@ -11,10 +11,10 @@ public class Aereo extends Animal{
 
     /**
      * Construtor da classe Aereo
-     * @param  para referenciar a do especie
-     * @param  para referenciar o sexo
-     * @param  para referenciar a dataNascimento
-     * @param  para referenciar a altitudeVoo
+     * @param especie para referenciar a do troço
+     * @param sexo para referenciar o sexo do bixo
+     * @param dataNascimento para referenciar a a data de nascimento
+     * @param altitudeVoo para referenciar a alto que voa
      */
     public Aereo(String especie, String sexo, int dataNascimento, double altitudeVoo) {
         super(especie, sexo, dataNascimento);

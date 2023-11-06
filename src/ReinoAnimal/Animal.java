@@ -17,9 +17,9 @@ public class Animal {
 
 	    /**
 	     *  Construtor da classe Animal
-	     * @param aqui vai referenciar a especie do animal
-	     * @param aqui vai referenciar o sexo
-	     * @param aqui vai referenciar a dataNascimento
+	     * @param especie aqui vai referenciar a especie do animal
+	     * @param sexo aqui vai referenciar do animal
+	     * @param dataNascimento aqui vai referenciar a data de nascimento
 	     */
 	
 	    public Animal(String especie, String sexo, int dataNascimento) {
