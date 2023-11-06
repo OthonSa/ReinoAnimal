@@ -1,56 +1,46 @@
 package ReinoAnimal;
+
 /**
- * Classe reponsavel por conter todos os animais aereos, abaixo temos:
- * Atributo que armazena a altitude que o animal consegue voar.
- * 
+ * uma classe para especificar os animais voadores e seus metodos e atributos
  * @author 20201064010009
- * 
  */
 public class Aereo extends Animal{
-
+	
+	/**
+	 * atributo exclusivo dos voadores
+	 */
 	private double altitudeVoo;
-
-    /**
-     * Construtor da classe Aereo
-     * @param especie para referenciar a do troço
-     * @param sexo para referenciar o sexo do bixo
-     * @param dataNascimento para referenciar a a data de nascimento
-     * @param altitudeVoo para referenciar a alto que voa
-     */
+	
+	/**
+	 * 
+	 * constrututor para categorizar os animais voadores
+	 * @param especie referenciar a especie animal
+	 * @param sexo referenciar o sexo do animal
+	 * @param dataNascimento referenciar a data de nascimento
+	 * @param altitudeVoo referenciar a altitude de voo do animal
+	 */
     public Aereo(String especie, String sexo, int dataNascimento, double altitudeVoo) {
         super(especie, sexo, dataNascimento);
         this.altitudeVoo = altitudeVoo;
     }
-
+    
     /**
-     *  Método que simula o ato de voar do animal aéreo
+     * simular que o animal está voando
      */
     public void voar() {
         System.out.println("O animal está voando...");
     }
-
-    /**
-     *  Sobrescreve o método comer da classe Animal
-     */
+    
     @Override
     public void comer() {
         System.out.println("O animal aéreo está comendo...");
     }
-
-    /**
-     *  Sobrescreve o método perfil da classe Animal
-     */
+   
     @Override
     public void perfil() {
         super.perfil();
         System.out.println("Altitude de Voo: " + altitudeVoo);
     }
-
-    /**
-     *  gets e sets para os atributos da classe Aereo
-     * @return aqui vai pegar o dado da altitude do voo
-     */
-   
     public double getAltitudeVoo() {
         return altitudeVoo;
     }

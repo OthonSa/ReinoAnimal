@@ -1,46 +1,43 @@
 package ReinoAnimal;
+
 /**
- * Classe reponsavel por conter todos os animais aquaticos, abaixo temos:
- * Atributo que armazena a tipoAgua,Atributo que armazena se ele possui escamas,
+ * uma classe para especificar os animais aquaticos e seus metodos e atributos
  * @author 20201064010009
  */
 public class Aquatico extends Animal{
 	
+	/**
+	 * atributos exclusivos dos animais aquaticos
+	 */
 	private String tipoAgua; 
     private boolean possuiEscamas;
-
+    
     /**
-     * Construtor da classe Aquatico que vai especificar que o animal é aquatico
-     * @param especie aqui vai referenciar da especie do animal
-     * @param sexo aqui vai referenciar do sexo dele
-     * @param dataNascimento aqui vai referenciar do anivesario dele
-     * @param tipoAgua aqui vai referenciar o se vai ser molhada ou n
-     * @param possuiEscamasa qui vai referenciar a se vai ter escamas ou n
+     * 
+     * construtor para a inserção de novos animais aquaticos
+     * @param especie referenciar a especie do animal
+     * @param sexo referenciar o sexo do animal
+     * @param dataNascimento referenciar  o anivesario do animal
+     * @param tipoAgua referenciar o tipo da agua do animal
+     * @param possuiEscamas referenciar se ele tem escamas ou n
      */
     public Aquatico(String especie, String sexo, int dataNascimento, String tipoAgua, boolean possuiEscamas) {
         super(especie, sexo, dataNascimento);
         this.tipoAgua = tipoAgua;
         this.possuiEscamas = possuiEscamas;
     }
-
     /**
-     * Método que simula o ato de nadar do animal aquático
+     * simular que o anima ta nadando
      */
     public void nadar() {
         System.out.println("O animal está nadando...");
     }
-
-    /**
-     * Sobrescreve o método comer da classe Animal
-     */
+    
     @Override
     public void comer() {
         System.out.println("O animal aquático está comendo...");
     }
-
-    /**
-     * Sobrescreve o método perfil da classe Animal
-     */
+    
     @Override
     public void perfil() {
         super.perfil();
@@ -48,10 +45,6 @@ public class Aquatico extends Animal{
         System.out.println("Possui Escamas: " + possuiEscamas);
     }
 
-    /**
-     * Getters e setters para os atributos da classe Aquatico
-     * @return pega os dados do tipo da agua de manda de volta
-     */
     public String getTipoAgua() {
         return tipoAgua;
     }

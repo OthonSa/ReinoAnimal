@@ -1,70 +1,56 @@
 package ReinoAnimal;
 
 /**
- * Classe reponsavel por conter todos os dados base dos animais, abaixo temos:
- * Atributo que armazena a espécie do animal,Atributo que armazena o sexo do animal,
- * Atributo que armazena a data de nascimento do animal,
- * Atributo de classe para contar a quantidade de animais instanciados.
+ * uma classe generica para animal
  * @author 20201064010009
  */
 public class Animal {
-	 	
+	
+	 	/**
+	 	 * atributos para os animais criados
+	 	 */
 		private String especie;  
 	    private String sexo;    
 	    private int dataNascimento;  
 	    private static int contador = 0;
-
 	    /**
-	     *  Construtor da classe Animal
-	     * @param especie aqui vai referenciar a especie do animal
-	     * @param sexo aqui vai referenciar do animal
-	     * @param dataNascimento aqui vai referenciar a data de nascimento
+	     * 
+	     * construtor para a inserção de novos animais
+	     * @param especie referenciar a especie de animal
+	     * @param sexo referenciar o sexo do animal
+	     * @param dataNascimento referenciar a data de nascimento
 	     */
-	
 	    public Animal(String especie, String sexo, int dataNascimento) {
 	        this.especie = especie;
 	        this.sexo = sexo;
 	        this.dataNascimento = dataNascimento;
 	        incrementarContador();
 	    }
-
 	    /**
-	     *  Método privado para incrementar o contador de animais
+	     * contador para somar a lista
 	     */
 	    private void incrementarContador() {
 	        contador++;
 	    }
-
 	    /**
-	     * Método que simula o ato de comer do animal
+	     * simular animal comendo
 	     */
 	    public void comer() {
 	        System.out.println("O animal está comendo...");
 	    }
-
 	    /**
-	     * Método que exibe o perfil do animal, mostrando os atributos
+	     * exibir as catacteristicas do animal especificico imprimindo
 	     */
 	    public void perfil() {
 	        System.out.println("Espécie: " + especie);
 	        System.out.println("Sexo: " + sexo);
 	        System.out.println("Data de Nascimento: " + dataNascimento);
 	    }
-
-	    /**
-	     *  Método estático para obter a quantidade de animais instanciados
-	     * @return aqui vai pegar o contador
-	     */
-	     
+	    
 	    public static int getContador() {
 	        return contador;
 	    }
 
-	    /**
-	     * logo abaixo temos os gets e sets da classe animal
-	     * 
-	     */
-	
 	    public String getEspecie() {
 	        return especie;
 	    }

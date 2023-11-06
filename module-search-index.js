@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"ReinoAnimal"}];updateSearchResults();
+moduleSearchIndex = [];updateSearchResults();
